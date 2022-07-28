@@ -193,7 +193,7 @@ resource "aws_db_instance" "discourse" {
   availability_zone = "${var.zone_a}"
   password = "${var.db_password}"
   skip_final_snapshot = true
-  engine_version  = "9.6.3"
+  engine_version  = "12.7"
   allocated_storage = 6
   engine = "postgres"
   db_name = "discourse"
